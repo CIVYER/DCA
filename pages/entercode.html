@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compatriot: DHVSU Campus AI Associate</title>
+    <link rel="icon" href="../pics/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/entercode.css" />
+    <script
+      src="https://kit.fontawesome.com/cdbdacf22a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <header>
+    <div class="logo">
+      <a href="homepage.html"><img src="../pics/logo.png" /></a>
+    </div>
+
+    <div class="logo-name">
+      <p class="ln1">DHVSU CAMPUS WEB ASSITANT</p>
+      <p class="ln2">Don Honorio Ventura State University</p>
+    </div>
+
+    <div class="nav-container" data-visible="false">
+      <button class="button-confirm"><a href="login.html">Log In →</a></button>
+      <button class="button-confirm">
+        <a href="registration.html">Sign Up →</a>
+      </button>
+    </div>
+  </header>
+
+  <body>
+    <div class="body">
+      <div class="form-container">
+        <form class="codeForm" action="../php/reg.php" method="post">
+          <input type="text" name="htmlStore" id="htmlStore" class="hidden" />
+          <input
+            type="text"
+            maxlength="6"
+            name="fullOTP"
+            id="fullOTP"
+            class="hidden"
+          />
+          <input type="text" name="newToken" id="newToken" class="hidden" />
+          <input type="text" name="token" id="token" class="hidden" />
+          <input type="text" name="email" id="email" class="hidden" />
+          <div class="title">
+            <h1>Enter Your Code</h1>
+            <h6>
+              Verification code has been sent to email 202*******@dhvsu.edu.ph.
+              You have 3 mins to enter this code before it expires.
+            </h6>
+            <h3>Enter 6 Digit Code</h3>
+          </div>
+
+          <div class="otp-box">
+            <input type="text" maxlength="1" />
+            <input type="text" maxlength="1" />
+            <input type="text" maxlength="1" class="space" />
+            <input type="text" maxlength="1" />
+            <input type="text" maxlength="1" />
+            <input type="text" maxlength="1" />
+          </div>
+
+          <div id="error"></div>
+
+          <!-- <div class= "buttons">  -->
+          <!-- <a href=""> <input type="submit" value="Submit" class="button-submit" id="btnSubmit"> </a> -->
+          <!-- </div> -->
+
+          <div class="code">
+            <p>Haven't recieved verification code?</p>
+            <a href="forgotpass.html"> Resend Code</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>About us</h4>
+          <ul>
+            <li><a href="our-story.html">Our Company</a></li>
+            <li><a href="our-team.html">Our Team</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <ul>
+            <li><a href="about-us.html">FAQ</a></li>
+            <li><a href="contacts.html">Message Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-social-links">
+          <h4>Follow Us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="box__copyright">
+        <hr />
+        <p>© 2023 DHVSU Campus WEB Assistant. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/auth.js"></script>
+</html>

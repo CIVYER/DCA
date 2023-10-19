@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compatriot: DHVSU Campus AI Associate</title>
+    <link rel="icon" href="../pics/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/registration.css">
+    <script src="https://kit.fontawesome.com/cdbdacf22a.js" crossorigin="anonymous"></script>
+    
+</head>
+
+<header>
+
+    <div class="logo">
+        <a href="../index.html"><img src="../pics/logo.png"></a>
+    </div>
+
+    <div class="logo-name">
+        <P class="ln1">DHVSU CAMPUS WEB ASSITANT</P>
+        <p class="ln2">Don Honorio Ventura State University</p>
+    </div>
+    
+    <div class="nav-container" data-visible="false">
+        <button class="button-confirm" onclick="window.location ='./login.html'"><a href="./login.html">Log In →</a></button>
+        <button class="button-confirm" onclick="window.location ='./registration.html'"><a href="./registration.html">Sign Up →</a></button>
+    </div>
+   
+</header>
+<body>
+    <div class="body">
+        <div class="form-container">
+            <div class="logo-container">
+                <img src="../Pics/logo2.png">
+            </div>
+            <form class="regForm" action="../php/reg.php" method="post">
+            <div class="title"><p>Registration Form</p></div>
+            <label for="name">Full Name:</label>
+            <div class="fullNameContainer">
+                <input required minlength="2" type="text" id="lName" name="lName" placeholder="Last Name">
+                <input required  type="text" id="fName" name="fName" placeholder="1st-2nd Name">
+                <input required maxlength="1" type="text" id="mName" name="mName" placeholder="M.I (Initial)">
+            </div>
+    
+            <label for="email">DHVSU Email:</label>
+            <div id="emailError" class="error"></div>
+            <input required type="email" id="email" name="email" placeholder="DHVSU Email">
+            
+            <label for="studentno">Student Number:</label>
+            <div id="studNoError" class="error"></div>
+            <div id="studnoemailError" class="error"></div>
+            <input required onKeyPress="if(this.value.length==10) return false;" type="number" id="studentno" name="studentno" placeholder="Student Number">
+    
+            <label for="password">Password:</label>
+            <div id="passLengthError" class="error"></div>
+            <div class="conpassError error"></div>
+            <input required type="password" id="password" name="password" placeholder="Password">
+            
+            <label for="confirm_password">Confirm Password:</label>
+            <div class="conpassError error"></div>
+            <input required type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password">
+    
+            <label for="dept" class="options">Department/Track:</label>
+            <select onchange="add_option()" name="dept" id="dept">
+                <option value="---">---</option>
+                <option value="COLLEGE OF ENGINEERING AND ARCHITECTURE">COLLEGE OF ENGINEERING AND ARCHITECTURE</option>
+                <option value="COLLEGE OF BUSINESS STUDIES">COLLEGE OF BUSINESS STUDIES</option>
+                <option value="COLLEGE OF ARTS AND SCIENCES">COLLEGE OF ARTS AND SCIENCES</option>
+                <option value="COLLEGE OF HOSPITALITY MANAGEMENT">COLLEGE OF HOSPITALITY MANAGEMENT</option>
+                <option value="COLLEGE OF SOCIAL SCIENCES AND PHILOSOPHY">COLLEGE OF SOCIAL SCIENCES AND PHILOSOPHY</option>
+                <option value="COLLEGE OF EDUCATION">COLLEGE OF EDUCATION</option>
+                <option value="COLLEGE OF COMPUTING STUDIES">COLLEGE OF COMPUTING STUDIES</option>
+                <option value="COLLEGE OF INDUSTRIAL TECHNOLOGY">COLLEGE OF INDUSTRIAL TECHNOLOGY</option>
+                <option value="SENIOR HIGH SCHOOL: ACADEMIC TRACK">SENIOR HIGH SCHOOL: ACADEMIC TRACK</option>
+                <option value="SENIOR HIGH SCHOOL: TECHNICAL VOCATIONAL LIVELIHOOD TRACK">SENIOR HIGH SCHOOL: TECHNICAL VOCATIONAL LIVELIHOOD TRACK</option>
+                <option value="LABORATORY HIGH SCHOOL">LABORATORY HIGH SCHOOL</option>
+            </select>
+
+            <label for="course" class="options" id="courseStrand">Course/Strand:</label>
+            <select name="course" id="course" onchange="turnWhite()">
+                <option value="1">---</option>
+            </select>
+    
+            <label for="yrSec" class="options">Year and Section:</label>
+            <div class="yrSecInpt">
+                <input required onKeyPress="if(this.value.length==2) return false;" type="number" id="year" name="year" placeholder="Year/Grade">
+                <input required type="text" id="section" name="section" placeholder="Section">
+            </div>
+            <div id="accExists" class="error"></div>
+            <input type="submit" value="Submit" class="button-submit" id="btnSubmit">
+            </form>
+        </div>
+    </div>
+
+</body>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>About us</h4>
+                <ul>
+                    <li><a href="our-story.html">Our Company</a></li>
+                    <li><a href="our-team.html">Our Team</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><a href="about-us.html">FAQ</a></li>
+                    <li><a href="contacts.html">Message Us</a></li>
+                </ul>
+            </div>
+        
+            <div class="footer-social-links">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+
+            </div>
+
+        </div>
+
+    <div class="box__copyright">
+        <hr>
+        <p>© 2023 DHVSU Campus WEB Assistant. All rights reserved.</p>
+    </div>
+
+    </div>
+</footer>
+<!-- <iframe src="../chatbot/chatbot.html" type="text/html" class="chatbot"></iframe> -->
+<script src="../js/reg.js"></script>
+
+</html>

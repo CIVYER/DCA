@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compatriot: DHVSU Campus AI Associate</title>
+    <link rel="icon" href="../pics/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/forgotpass.css">
+    <script src="https://kit.fontawesome.com/cdbdacf22a.js" crossorigin="anonymous"></script>
+    
+</head>
+
+<header>
+
+    <div class="logo">
+        <a href="homepage.html"><img src="../pics/logo.png"></a>
+    </div>
+
+    <div class="logo-name">
+        <P class="ln1">DHVSU CAMPUS WEB ASSITANT</P>
+        <p class="ln2">Don Honorio Ventura State University</p>
+    </div>
+    
+    <div class="nav-container" data-visible="false">
+        <button class="button-confirm"><a href="login.html">Log In →</a></button>
+        <button class="button-confirm"><a href="registration.html">Sign Up →</a></button>
+    </div>
+   
+</header>
+<body>
+    <div class="body">
+        <div class="form-container">
+            <form class="regForm" action="../pages/entercode.html" method="post">
+            <div class="title"><h3>Forgot Password?</h3>
+            <h6>Please enter your e-mail address below to reset your password.</h6>
+
+        </div>
+
+    
+            <label for="email">DHVSU Email:</label>
+            <input type="text" name="token" id="token" class="hidden">
+            <input type="text" name="htmlStore" id="htmlStore" class="hidden">
+            <div class="emailCon">
+                <input type="email" id="email" name="email" placeholder="DHVSU Email" required>
+                <img src="../pics/loading-process-svgrepo-com.svg" alt="" id="load">
+            </div>
+            <div class="error" id="error"></div>
+            <div class= "buttons"> 
+                <input type="submit" value="Submit" class="button-submit" id="btnSubmit">
+                <br>
+                <a href="login.html"> Back to Login</a>
+            </div>
+            
+            
+        </form>
+        </div>
+    </div>
+
+        
+</body>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>About us</h4>
+                <ul>
+                    <li><a href="our-story.html">Our Company</a></li>
+                    <li><a href="our-team.html">Our Team</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><a href="about-us.html">FAQ</a></li>
+                    <li><a href="contacts.html">Message Us</a></li>
+                </ul>
+            </div>
+        
+            <div class="footer-social-links">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+
+            </div>
+
+        </div>
+
+    <div class="box__copyright">
+        <hr>
+        <p>© 2023 DHVSU Campus WEB Assistant. All rights reserved.</p>
+    </div>
+
+    </div>
+</footer>
+
+<script src="../js/auth.js"></script>
+
+</html>
